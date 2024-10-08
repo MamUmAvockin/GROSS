@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       autoplay: {
           delay: 3000, // Автоматическая смена слайда каждые 3 секунды
       },
-      slidesPerView: 3, // Количество видимых слайдов
+      slidesPerView: 4, // Количество видимых слайдов
       spaceBetween: 5, // Расстояние между слайдами
   });
 });
