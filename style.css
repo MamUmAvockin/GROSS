@@ -6,8 +6,10 @@ body {
 }
 
 .wrapper {
+    max-width: 100%;
     padding-left: 200px;
     padding-right: 200px;
+    box-sizing: border-box;
 }
 
 .header-main {
@@ -229,6 +231,7 @@ body {
     flex: 1;
     display: flex;
     justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .about-left h1 {
@@ -238,7 +241,6 @@ body {
     width: 140px;
     white-space: nowrap;
     padding-top: 30px;
-    padding-right: 70px;
 }
 
 .about-right {
@@ -463,11 +465,20 @@ body {
     cursor: pointer;
 }
 
+.sprav {
+    padding-left: 200px;
+    padding-right: 200px;
+    box-sizing: border-box;
+}
+
 .sprav .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 80px;
+    max-width: 100%;
+    padding: 0; 
+    box-sizing: border-box;
 }
 
 .sprav-left h1 {
@@ -483,26 +494,18 @@ body {
     flex-direction: row;
 }
 
-.sprav-right-column1 {
-    display: flex;
-    flex-direction: column;
-}
-
-.sprav-right-column2 {
-    display: flex;
-    flex-direction: column;
-}
-
-.sprav-right-column3 {
+.sprav .sprav-right-column1,
+.sprav .sprav-right-column2,
+.sprav .sprav-right-column3 {
     display: flex;
     flex-direction: column;
 }
 
 .column-button {
-    margin: 10px;
+    margin: 8px;
     width: 285px;
     height: 50px;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 1px;
     background: #ffff;
     border: 1px solid #A1A1A1
@@ -530,7 +533,6 @@ body {
 .spravvv {
     display: flex;
     justify-content: end;
-    padding-right: 90px;
     padding-top: 10px;
 }
 
@@ -673,4 +675,8 @@ footer {
     display: flex;
     flex-direction: column;
     margin-right: 150px;
+}
+
+.social .wrapper {
+    padding-bottom: 100px;
 }
