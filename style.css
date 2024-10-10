@@ -151,6 +151,8 @@ body {
 }
 
 .swiper-container {
+    width: calc(100% - 400px); /* Учитываем отступы по 200px с каждой стороны */
+    margin: 0 auto; /* Центрируем контейнер */
 }
 
 .swiper-slide {
@@ -159,11 +161,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto; /* Автоматическая ширина слайда */
+    max-width: 100%; /* Максимальная ширина слайда */
 }
 
 .swiper-slide img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 270px;
+    height: 250px; 
+    border-radius: 10px;
     margin-right: 20px;
 }
 
@@ -396,10 +401,8 @@ body {
 .product-card {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    width: 300px;
+    max-width: 285px;
+    width: 285px;
     height: 450px;
 }
 

@@ -16,17 +16,14 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper('.swiper-container', {
-      loop: true,
-      pagination: {
-          el: '.swiper-pagination', // Пагинация (точки)
-          clickable: true, // Возможность кликать по точкам
-      },
-      autoplay: {
-          delay: 3000, // Автоматическая смена слайда каждые 3 секунды
-      },
-      slidesPerView: 4, // Количество видимых слайдов
-      spaceBetween: 6, // Расстояние между слайдами
-  });
+document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto', // Автоматический расчет количества видимых слайдов
+        spaceBetween: 30, // Расстояние между слайдами
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true, // Делает пагинацию кликабельной
+        },
+        }
+);
 });
