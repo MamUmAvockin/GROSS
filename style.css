@@ -174,9 +174,12 @@ body {
 }
 
 .swiper-pagination {
-    display: flex; 
+    display: flex;
+    height: 15px;
     justify-content: center; 
     margin-top: 20px; 
+    width: 140px;
+    padding-bottom: 130px;
 }
 
 .swiper-pagination {
