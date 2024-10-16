@@ -1,29 +1,23 @@
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 4,
-  spaceBetween: 20,
-  loop: true, // Для бесконечной прокрутки
-  navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-  },
-  autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-  },
-});
+
 
 document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 'auto', // Автоматический расчет количества видимых слайдов
-        spaceBetween: 30, // Расстояние между слайдами
+        slidesPerView: 4,
+        spaceBetween: 40,
+        loop: true,
         pagination: {
-            el: '.swiper-pagination',
-            clickable: true, // Делает пагинацию кликабельной
+            el: '#swiperPag',
+            clickable: true,
+            renderBullet: function (index, className) {
+                if (index < 6) { 
+                    return '<span class="' + className + '"></span>';
+                }
+                return '';
+            },
         },
-        }
-);
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
 });

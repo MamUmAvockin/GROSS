@@ -151,8 +151,8 @@ body {
 }
 
 .swiper-container {
-    width: calc(100% - 400px); /* Учитываем отступы по 200px с каждой стороны */
-    margin: 0 auto; /* Центрируем контейнер */
+    margin: 0 auto;
+    overflow: hidden; 
 }
 
 .swiper-slide {
@@ -161,12 +161,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto; /* Автоматическая ширина слайда */
-    max-width: 100%; /* Максимальная ширина слайда */
+    width: 240px; 
+    margin-right: 20px;
+    max-width: 1600px;
 }
 
 .swiper-slide img {
-    width: 270px;
+    width: 240px;
     height: 250px; 
     border-radius: 10px;
     margin-right: 20px;
@@ -178,17 +179,35 @@ body {
     margin-top: 20px; 
 }
 
-.swiper-pagination a {
-    width: 15px;
-    height: 15px;
-    background: #1B2951; 
-    border-radius: 50%; 
+.swiper-pagination {
+	width: auto;
+	left: auto;
+	margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+	padding: 5px 10px;
+	border-radius: 0;
+	width: auto;
+	height: 15px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color:#000;
+	opacity: 1;
+    background: #1B2951;
+    border-radius: 50%;
     margin: 0 5px; 
     display: inline-block; 
     transition: background 0.3s; 
+
 }
 
-.swiper-pagination a.active {
+.swiper-pagination-bullet-active {
     background: #85D0B7;
 }
 
@@ -402,19 +421,19 @@ body {
     background-color: #fff;
     border-radius: 10px;
     max-width: 285px;
-    width: 285px;
+    width: 240px;
     height: 450px;
 }
 
 .card-top {
     background-color: #F6F6F6;
-    width: 285px;
+    width: 240px;
     height: 250px;
     border-radius: 10px;
 }
 
 .card-bottom h1 {
-    width: 271px;
+    width: 240px;
     height: 17px;
     font-family: Montserrat;
     font-size: 14px;
@@ -455,7 +474,7 @@ body {
 }
 
 .card-button {
-    width: 285px;
+    width: 240px;
     height: 40px;
     border-radius: 10px;
     background: #85D0B7;
